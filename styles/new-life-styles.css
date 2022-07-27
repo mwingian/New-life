@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+}
+h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+ul,ol{
+    margin: 0;
+    padding: 0;
+}
+.links__w {
+    color: white;
+}
+.title_grn{
+    color:#5B8603;
+}
+.icon__mediums{
+    width: 25px;
+    height: 25px;
+}
+.icon__small{
+    width: 18px;
+    height: 18px;
+}
+.container {
+    max-width: 1130px;
+    margin: 0 auto;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 116px;
+}
+
+.page__logo {
+    background-color: white;
+    padding: 15px 15px 0 15px;
+    border-bottom-right-radius: 30px;
+}
+
+.page__logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.navigation__menu {
+    display: flex;
+}
+
+.navigation__element {
+    margin-right: 47px;
+    list-style-type: none;
+}
+
+.navigation__element:last-child {
+    margin: 0;
+}
+
+.navigation__link {
+    font-family: 'Philosopher-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.contacts {
+    display: flex;
+}
+
+.phone::before {
+    content: '';
+    position: absolute;
+    background-image: url(../icons/header__logo/arcticons_phone.png);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 16px;
+    left: -20px;
+}
+
+.phone {
+    position: relative;
+    margin-right: 36px;
+    font-family: 'Philosopher-Regular';
+}
+
+.location::before {
+    content: '';
+    position: absolute;
+    background-image: url(../icons/header__logo/cil_location-pin.png);
+    width: 15px;
+    height: 16px;
+    left: -20px;
+}
+
+.location {
+    position: relative;
+    font-family: 'Philosopher-Regular';
+}
+
+/* --- Intro block styles --- */
+/* .main__content {
+    display: flex;
+    flex-direction: column;
+} */
+
+.intro__block {
+    background: url(../img/intro__bg/Rectangle\ 3\ Palette\ Palette.jpg) center center / cover no-repeat;
+    min-height: 896px;
+}
+
+.intro__row {
+    margin-top: 193px;
+}
+
+.intro__row .intro__title {
+    margin: 0;
+}
+
+.intro__title {
+    font-family: 'Philosopher-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 76px;
+}
+
+.intro__subtitle {
+    font-family: 'Philosopher-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+/* --- Socials block stiles --- */
+.socials__block {
+    min-height: 70px;
+    padding: 22px 0;
+}
+
+.socials__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials__link {
+    margin-right: 75px;
+}
+
+.socials__link:last-child {
+    margin: 0;
+}
+.instagram {
+    background: url(../icons/socials__icons/instagram.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.facebook {
+    background: url(../icons/socials__icons/facebook.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.viber {
+    background: url(../icons/socials__icons/viber.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.telegram {
+    background: url(../icons/socials__icons/telegram.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.whatsapp {
+    background: url(../icons/socials__icons/whatupp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* --- About block styles --- */
+.about__us {
+    padding: 63px 0 75px 0;
+}
+
+.about__title {
+    font-family: 'Philosopher-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 42px;
+}
+
+.about_content {
+    font-family: 'Raleway-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+}
+/* --- Footer block styles --- */
+.page__footer {
+    min-height: 131px;
+    background-color: #2E4400;
+    padding: 53px 0;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__content .navigation__element {
+    margin-right: 10px;
+}
+.footer__content .navigation__element:last-child{
+    margin: 0;
+}
+
+.navigation__link {}
+
+.location {}
+
+.footer__content .socials__link {
+    margin-right: 30px;
+}
+.footer__content .socials__link:last-child{
+    margin: 0;
+}
+[tst txt]
