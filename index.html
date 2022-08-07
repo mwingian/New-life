@@ -22,28 +22,33 @@
                             <a href="#" class="page__logo">
                                 <img src="./icons/header__logo/Zycie od nowa (logo text) 3.png" alt="" srcset="">
                             </a>
-                            <nav>
+                            <nav class="navigation__wrapper">
                                 <ul class="navigation__menu">
-                                    <li class="navigation__element"><a href="#" class="navigation__link links__w">Про
+                                    <li class="navigation__element"><a data-goto=".about__us" href="#"
+                                            class="navigation__link links__w">Про
                                             нас</a>
                                     </li>
-                                    <li class="navigation__element"><a href="#"
+                                    <li class="navigation__element"><a data-goto=".sevices" href="#"
                                             class="navigation__link links__w">Послуги</a>
                                     </li>
-                                    <li class="navigation__element"><a href="#"
+                                    <li class="navigation__element"><a data-goto=".specialists" href="#"
                                             class="navigation__link links__w">Фахівці</a>
                                     </li>
-                                    <li class="navigation__element"><a href="#"
+                                    <li class="navigation__element"><a data-goto=".partners" href="#"
                                             class="navigation__link links__w">Партнери</a>
                                     </li>
-                                    <li class="navigation__element"><a href="#"
+                                    <li class="navigation__element"><a data-goto=".contacts" href="#"
                                             class="navigation__link links__w">Контакти</a>
                                     </li>
                                 </ul>
+                                <div class="header__contacts">
+                                    <a href="tel:+48575643408" class="phone links__w">575643408</a>
+                                    <a href="https://www.google.com/maps/place/G%C4%99sia+8,+31-535+Krak%C3%B3w/@50.0537405,19.956816,17z/data=!3m1!4b1!4m5!3m4!1s0x47165b38ba4d7e5d:0x31f46be0ca2cd655!8m2!3d50.0537405!4d19.956816"
+                                        target="_blank" class="location links__w">GĘSIA 8/205</a>
+                                </div>
                             </nav>
-                            <div class="contacts">
-                                <a href="tel:+48575643408" class="phone links__w">575643408</a>
-                                <a href="#" class="location links__w">GĘSIA 8/205</a>
+                            <div class="menu__icon">
+                                <span></span>
                             </div>
                         </div>
                     </div>
@@ -69,25 +74,299 @@
             <section class="about__us">
                 <div class="container">
                     <h2 class="about__title title_grn">Про нас</h2>
-                    <p class="about_content">Фонд “Życie od nowa
-                        ” працює на благо мешканців Кракова.</p>
-                        <br><br>
-                    <p class="about_content">Організуємо зустрічі, психологічні консультації, психотерапевтичні сеанси,
-                        психологічну допомогу біженцям, організацію педологічної групи підтримки підлітків та дітей,
-                        організацію психологічної гарячої лінії, арт-терапію для психологів, супервізію для психологів,
-                        індивідуальну терапію, терапію для пар, сімейну терапію, консультації для батьків, психологічна
-                        та фізіотерапевтична реабілітація.</p>
-                        <br><br>
-                    <p class="about_content">Допомагаємо при виході з депресії, робота з самооцінкою, корекція
-                        поведінки, набуття уміння взаємодіяти в колективі та ін, проведення тренінгів, тренінгів,
-                        семінарів та конференцій. Організація зустрічей та консультацій з психологами, психіатрами та
-                        фізіотерапевтами, а також при необхідності з іншими фахівцями.</p>
-                        <br><br>
+                    <div class="about__description">Фонд “Życie od nowa
+                        ” працює на благо мешканців Кракова.</div>
+                    <div class="about__row">
+                        <div class="about__organization">
+                            <div class="organization__content">
+                                <div class="about__card">
+                                    <h3 class="organization__title">Організовуємо:</h3>
+                                    <ul class="organization__list">
+                                        <li class="organization__item">психологічні консультації,</li>
+                                        <li class="organization__item">психотерапевтичні сеанси,</li>
+                                        <li class="organization__item">психологічну допомогу біженцям,</li>
+                                        <li class="organization__item">педологічну групу підтримки підлітків та дітей,
+                                        </li>
+                                        <li class="organization__item">психологічну гарячу лінію,</li>
+                                        <li class="organization__item">арттерапію та супервазію для психологів,</li>
+                                        <li class="organization__item">індивідуальну терапію,</li>
+                                    </ul>
+                                </div>
+                                <div class="about__card titless">
+                                    <ul class="organization__list">
+                                        <li class="organization__item">терапію для пар,</li>
+                                        <li class="organization__item"> сімейну терапію,</li>
+                                        <li class="organization__item"> консультації для батьків,</li>
+                                        <li class="organization__item">психологічну та фізіотерапевтичну реабілітацію,
+                                        </li>
+                                        <li class="organization__item"> тренінги, семінари, конференції,</li>
+                                        <li class="organization__item">зустрічі, консультації з психологами,
+                                            психіатрами,
+                                            фізіотерапевтами, та іншими фахівцями.</li>
+                                    </ul>
+                                </div>
+                                <div class="about__card">
+                                    <h3 class="organization__title">Допомагаємо:</h3>
+                                    <ul class="organization__list">
+                                        <li class="organization__item">пізнати себе,</li>
+                                        <li class="organization__item">зрозуміти, що треба змінити і як змінитися,</li>
+                                        <li class="organization__item">вийти з депресії,</li>
+                                        <li class="organization__item">пропрацювати самооцінку,</li>
+                                        <li class="organization__item">набути вміння взаємодіяти в колективі,</li>
+                                        <li class="organization__item">відкорегувати поведінку,</li>
+                                        <li class="organization__item">будувати життя правильно,</li>
+                                        <li class="organization__item">за Вашим бажанням та нашою допомогою, змінимо
+                                            Ваше життя, та
+                                            навчимо жити поновому!</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="foundation__goals">
                 <div class="container">
-
+                    <h2 class="foundation__title title_grn">Цілі фонду:</h2>
+                    <div class="foundation__column">
+                        <div class="item__row">
+                            <div class="foundation__item">
+                                <div class="item__description">Психологічна допомога</div>
+                            </div>
+                            <div class="foundation__item">
+                                <div class="item__description">Доставка гуманітарної допомоги</div>
+                            </div>
+                            <div class="foundation__item">
+                                <div class="item__description">Надання всілякої допомоги людям, які постраждали від
+                                    гуманітарних криз і громадянських воєн</div>
+                            </div>
+                        </div>
+                        <div class="item__row">
+                            <div class="foundation__item">
+                                <div class="item__description">Психотерапевтична допомога</div>
+                            </div>
+                            <div class="foundation__item">
+                                <div class="item__description">Підтримка волонтерства</div>
+                            </div>
+                            <div class="foundation__item">
+                                <div class="item__description">Фізіологічна допомога</div>
+                            </div>
+                        </div>
+                        <div class="item__row">
+                            <div class="foundation__item">
+                                <div class="item__description">Організація партії</div>
+                            </div>
+                            <div class="foundation__item">
+                                <div class="item__description">Популяризація ідеї сімейної та соціальної медіації</div>
+                            </div>
+                            <div class="foundation__item">
+                                <div class="item__description">Підтримка біженців</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="foundation__row">
+                        <div class="item__column">
+                            <div class="foundation__item">
+                                <div class="item__description">Психологічна допомога</div>
+                            </div>
+                            <div class="foundation__item">
+                                <div class="item__description">Психотерапевтична допомога</div>
+                            </div>
+                            <div class="foundation__item">
+                                <div class="item__description">Організація партії</div>
+                            </div>
+                        </div>
+                        <div class="item__column">
+                            <div class="foundation__item">
+                                <div class="item__description">Доставка гуманітарної допомоги</div>
+                            </div>
+                            <div class="foundation__item">
+                                <div class="item__description">Підтримка волонтерства</div>
+                            </div>
+                            <div class="foundation__item">
+                                <div class="item__description">Популяризація ідеї сімейної та соціальної медіації</div>
+                            </div>
+                        </div>
+                        <div class="item__column">
+                            <div class="foundation__item">
+                                <div class="item__description">Надання всілякої допомоги людям, які постраждали від гуманітарних криз і громадянських воєн</div>
+                            </div>
+                            <div class="foundation__item">
+                                <div class="item__description">Фізіологічна допомога</div>
+                            </div>
+                            <div class="foundation__item">
+                                <div class="item__description">Підтримка біженців</div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+            <section class="sevices">
+                <div class="container">
+                    <div class="services__block">
+                        <h2 class="services__title title_grn">Послуги</h2>
+                        <div class="services__content">
+                            <div class="content__card">
+                                <h3 class="card__title">Індивідуальні консультації</h3>
+                                <ul class="card__list">
+                                    <li class="list__element">корекція негативних психічних станів</li>
+                                    <li class="list__element">самосприйняття</li>
+                                    <li class="list__element">відновлення після депресії</li>
+                                    <li class="list__element">робота над статтями powijy v</li>
+                                    <li class="list__element">навчання обмеженій поведінці</li>
+                                    <li class="list__element">набуття коефіцієнтних навичок у команді тощо.</li>
+                                </ul>
+                            </div>
+                            <div class="content__card">
+                                <h3 class="card__title">Посадка в навчанні</h3>
+                                <ul class="card__list">
+                                    <li class="list__element">«Технології ефективного спілкування»</li>
+                                    <li class="list__element">«Заставник успішного працівника»</li>
+                                    <li class="list__element">«Емоційний інтелект – запорука гарної самооцінки»</li>
+                                    <li class="list__element">«Навчання особистих ресурсів»</li>
+                                    <li class="list__element">«Тренінг для зменшення особистої тривожності»</li>
+                                    <li class="list__element"> «Чуйність: спосіб зрозуміти інших»</li>
+                                </ul>
+                            </div>
+                            <div class="content__card">
+                                <h3 class="card__title">Психодіагностика</h3>
+                                <ul class="card__list">
+                                    <li class="list__element">готовність дитини до школи</li>
+                                    <li class="list__element">професійна спрямованість</li>
+                                    <li class="list__element">готовий до шлюбу</li>
+                                    <li class="list__element">індивідуально-психологічна сумісність партнерів</li>
+                                    <li class="list__element">схильність до появи зубних рядів</li>
+                                    <li class="list__element">суїцидальна поведінка тощо</li>
+                                </ul>
+                            </div>
+                            <div class="content__card">
+                                <h3 class="card__title">Робота з дітьми щодо їхніх потреб</h3>
+                                <ul class="card__list">
+                                    <li class="list__element">психодіагностика</li>
+                                    <li class="list__element">коригувальна підтримка та розвиток</li>
+                                    <li class="list__element">психолого-педагогічний супровід</li>
+                                    <li class="list__element">соціальна адаптація</li>
+                                </ul>
+                            </div>
+                            <div class="content__card">
+                                <h3 class="card__title">Робота з травмами війни, посттравматичним стресовим розладом
+                                </h3>
+                                <ul class="card__list">
+                                    <li class="list__element">робота з ПТСР</li>
+                                    <li class="list__element">психологічна допомога при загибелі людей</li>
+                                    <li class="list__element">допомога в кризових ситуаціях</li>
+                                    <li class="list__element">психотерапевтична робота з батьківською сім`єю</li>
+                                </ul>
+                            </div>
+                            <div class="content__card">
+                                <h3 class="card__title">Складання судового висновку щодо</h3>
+                                <ul class="card__list">
+                                    <li class="list__element">визначення моральної шкоди</li>
+                                    <li class="list__element">визначення індивідуальних особливостей коливання</li>
+                                    <li class="list__element">Зима прив`язує дітей до одного з батьків</li>
+                                    <li class="list__element">визначення емоційно-психічного стану маленької дитини</li>
+                                    <li class="list__element">ознаки психологічного стресу (або психологічного тиску) на
+                                        неповнолітню дитину</li>
+                                    <li class="list__element"> діагностика батьків (сім`ї) з дитиною</li>
+                                    <li class="list__element">ознаки домашнього насильства</li>
+                                </ul>
+                            </div>
+                            <div class="content__card">
+                                <h3 class="card__title">Сімейне консультування</h3>
+                                <ul class="card__list">
+                                    <li class="list__element">вирішення та попередження сімейних конфліктів</li>
+                                    <li class="list__element">конструктивні моменти сімейних криз</li>
+                                    <li class="list__element">діагностика партнерів</li>
+                                    <li class="list__element">загальний підхід у вихованні дітей</li>
+                                    <li class="list__element">психологічна підготовка до шлюбу</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="specialists">
+                <div class="container__wide">
+                    <div class="specialists__row">
+                        <h3 class="specialists__title title_grn">Фахівці:</h3>
+                        <div class="specialists__content">
+                            <div class="card__content">
+                                <div class="specialists__card">
+                                    <div class="specialist__name">Iнна Осадченко</div>
+                                    <div class="specialists__description">Професор, доктор педагогічних наук; практичний
+                                        психолог;
+                                        співзасновник та керівник громадської організації «Міжнародна асоціація сучасної
+                                        освіти,
+                                        науки і культури»; автор та керівник міжнародного волонтерського проекту
+                                        «RENEWING».</div>
+                                </div>
+                                <div class="specialists__card">
+                                    <div class="specialist__name">Iнна Осадченко</div>
+                                    <div class="specialists__description">Професор, доктор педагогічних наук; практичний
+                                        психолог;
+                                        співзасновник та керівник громадської організації «Міжнародна асоціація сучасної
+                                        освіти,
+                                        науки і культури»; автор та керівник міжнародного волонтерського проекту
+                                        «RENEWING».</div>
+                                </div>
+                                <div class="specialists__card">
+                                    <div class="specialist__name">Оксана Шпортун</div>
+                                    <div class="specialists__description">Доктор психологічних наук, професор, психолог ФК «ФІДЕС», голова
+                                        Вінницького регіонального відділення Української асоціації.</div>
+                                </div>
+                                <div class="specialists__card">
+                                    <div class="specialist__name">Лідія Ковальчук</div>
+                                    <div class="specialists__description">Кандидат наук з фізичного виховання і спорту, доцент (доктор філософії).
+                                        Педагогічний стаж 18 років.</div>
+                                </div>
+                            </div>
+                            <img src="./img/our-specialists__bg/Rectangle 97.png" alt="" srcset="" class="specialists__img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="partners">
+                <div class="container">
+                    <h2 class="partners__title title_grn">Партнери:</h2>
+                    <div class="partner__info">
+                        <div class="partners__subtitle links__w">Психологічний центр ФІДЕС</div>
+                        <a href="#" class="partners__link links__w">https://fides.vn.ua</a>
+                    </div>
+                    <div class="partner__info">
+                        <div class="partners__subtitle links__w">Громадська організація «Міжнародна асоціація сучасної
+                            освіти, науки і культури»</div>
+                        <a href="#" class="partners__link links__w">https://www.gomasonk.com.ua</a>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts">
+                <div class="container__wide">
+                    <div class="contacts__row">
+                        <img src="./img/contacts__bg/Rectangle 101.png" alt="" class="contacts__img">
+                        <div class="contacts__info">
+                            <h2 class="contacts__title title_grn">Контакти:</h2>
+                            <div class="contacts__channels">
+                                <a href="#" class="channel__phone">575 643 408</a>
+                                <br><br>
+                                <a href="#" class="channel__email">zycieodnowakrakow@gmail.com</a>
+                                <br><br>
+                                <a href="#" class="channel__location">GĘSIA 8/205 31-535 KRAKÓW</a>
+                            </div>
+                            <div class="foundation__registration">
+                                Фонд <br>
+                                Życie od nowa <br>
+                                KRS: 0000963313 <br>
+                                Номер NIP: 6751763144 <br>
+                                Номер REGON: 521612910 <br>
+                                GĘSIA 8/205 31-535 KRAKÓW <br>
+                            </div>
+                            <div class="work__schedule">
+                                Ми працюємо:<br>
+                                Пн-Пт: 10:00 - 19:30<br>
+                                Субота: 12:00 - 16:00<br>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
@@ -96,11 +375,16 @@
                 <div class="footer__content">
                     <nav>
                         <ul class="navigation__menu">
-                            <li class="navigation__element"><a href="#" class="navigation__link links__w">Про нас</a></li>
-                            <li class="navigation__element"><a href="#" class="navigation__link links__w">Послуги</a></li>
-                            <li class="navigation__element"><a href="#" class="navigation__link links__w">Фахівці</a></li>
-                            <li class="navigation__element"><a href="#" class="navigation__link links__w">Партнери</a></li>
-                            <li class="navigation__element"><a href="#" class="navigation__link links__w">Контакти</a></li>
+                            <li class="navigation__element"><a href="#" class="navigation__link links__w">Про нас</a>
+                            </li>
+                            <li class="navigation__element"><a href="#" class="navigation__link links__w">Послуги</a>
+                            </li>
+                            <li class="navigation__element"><a href="#" class="navigation__link links__w">Фахівці</a>
+                            </li>
+                            <li class="navigation__element"><a href="#" class="navigation__link links__w">Партнери</a>
+                            </li>
+                            <li class="navigation__element"><a href="#" class="navigation__link links__w">Контакти</a>
+                            </li>
                         </ul>
                     </nav>
                     <a href="#" class="location links__w">GĘSIA 8/205 31-535 KRAKÓW</a>
@@ -115,6 +399,7 @@
             </div>
         </footer>
     </div>
+    <script src="./js/new-life-scrypt.js"></script>
 </body>
 
 </html>
