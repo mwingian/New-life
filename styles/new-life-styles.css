@@ -282,6 +282,18 @@ body.__lock {
     font-size: 16px;
     font-weight: 400;
     list-style-type: none;
+    position: relative;
+}
+
+.organization__item::before {
+    content: '';
+    position: absolute;
+    background-color: #000000;
+    width: 4px;
+    height: 4px;
+    top: 7px;
+    left: -12px;
+    border-radius: 2px;
 }
 
 /* --- Foundation goals block styles */
@@ -292,20 +304,6 @@ body.__lock {
 .foundation__title {
     margin-bottom: 40px;
 }
-
-/* 
-.foundation__row {
-    padding: 20px 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.item__column{
-    display: flex;
-    flex: 1 1 33.33%;
-    flex-direction: column;
-    align-items: space-between;
-} */
 
 .item__row {
     display: flex;
@@ -431,6 +429,7 @@ body.__lock {
 .specialists {
     padding: 54px 0 40px 0;
 }
+
 /* .specialists .container__wide{
     margin: 0;
 } */
@@ -438,12 +437,15 @@ body.__lock {
     margin-bottom: 70px;
     margin-left: 103px;
 }
+
 .specialists__row {
     position: relative;
 }
+
 .specialists__content {
     display: flex;
 }
+
 .card__content {
     display: flex;
     flex: 0 0 60%;
@@ -454,6 +456,7 @@ body.__lock {
     position: relative;
     z-index: 2;
 }
+
 .specialists__card {
     border: 1px solid #979797;
     border-radius: 10px;
@@ -482,12 +485,14 @@ body.__lock {
     height: 223px;
     background-color: white;
 }
+
 .specialists__img {
     height: 100%;
     position: absolute;
     right: 0;
     top: 0;
 }
+
 /* --- Partners block styles --- */
 .partners {
     padding: 40px 0 75px 0;
@@ -565,6 +570,40 @@ body.__lock {
     line-height: 20px;
     margin-bottom: 36px;
 }
+.channel__phone, .channel__email, .channel__location {
+    position: relative;
+    margin-left: 30px;
+}
+.channel__phone::before {
+    content: '';
+    position: absolute;
+    background: url(../icons/contacts__icons/phone.svg);
+    height: 26px;
+    width: 20px;
+    background-repeat: no-repeat; 
+    left: -30px;   
+}
+
+.channel__email::before {
+    content: '';
+    position: absolute;
+    background: url(../icons/contacts__icons/email.svg);
+    height: 20px;
+    width: 24px;
+    background-repeat: no-repeat;
+    left: -30px;
+    top: 5px;
+}
+
+.channel__location::before {
+    content: '';
+    position: absolute;
+    background: url(../icons/contacts__icons/location.svg);
+    height: 25px;
+    width: 21px;
+    background-repeat: no-repeat;
+    left: -30px;
+}
 
 .foundation__registration {
     font-family: 'Raleway-Regular';
@@ -603,6 +642,11 @@ body.__lock {
     margin: 0;
 }
 
+.contacts__channels a {
+    color: #000000;
+}
+
+
 .footer__content .socials__link {
     margin-right: 30px;
 }
@@ -624,6 +668,7 @@ body.__lock {
     }
 }
 
+/* --- WIDTH 767 and lower */
 @media (max-width: 767px) {
 
     /* .header__content {
@@ -674,6 +719,7 @@ body.__lock {
     .location {
         margin: 10px 0 0 0;
         font-size: 38px;
+        text-align: center;
     }
 
     .page__logo {
@@ -745,5 +791,125 @@ body.__lock {
     .intro__title,
     .intro__subtitle {
         text-align: center;
+    }
+}
+
+@media (max-width:426px) {
+    .intro__title {
+        font-size: 50px;
+    }
+
+    .socials__link {
+        margin-right: 40px;
+    }
+
+    .about__title {
+        text-align: center;
+    }
+
+    .about__description {
+        text-align: center;
+    }
+
+    .organization__content {
+        flex-direction: column;
+    }
+
+    .about__card {
+        text-align: center;
+    }
+
+    .organization__item {
+        list-style-type: disc;
+    }
+
+    .organization__item::before {
+        display: none;
+    }
+
+    .foundation__title {
+        text-align: center;
+    }
+
+    .foundation__column {
+        padding: 0 20px;
+    }
+
+    .item__row {
+        flex-direction: column;
+    }
+
+    .foundation__item {
+        align-self: self-start;
+    }
+
+    .sevices {
+        padding-bottom: 0;
+    }
+
+    .services__title {
+        text-align: center;
+    }
+
+    .specialists__title {
+        text-align: center;
+        margin-left: 0;
+        padding-top: 10px;
+    }
+    .specialists__description {
+        height: fit-content;
+    }
+    .footer__content{
+        flex-direction: column;
+    }
+    .socials__row{
+        padding: 10px 0;
+    }
+
+}
+@media (max-width: 1025px) {
+    .partners {
+        padding: 40px 0 30px 0;
+    }
+    .contacts {
+        background-image: url(../img/contacts__bg/Rectangle\ 101.png);
+        background-position: center center;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    .contacts__row{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .contacts__title{
+        color: white;
+    }
+    .contacts__channels a {
+        color:white;
+    }
+    .contacts__img{
+        display: none;
+    }
+    .contacts__info{
+        padding: 20px 0;
+        /* position: absolute; */
+        /* z-index: 2; */
+        /* transform: translate(50%,0); */
+        /* left: 50%; */
+        margin: 0;
+        padding: 20px 0;
+        /* margin-left: -122px; */
+    }
+}
+
+@media (max-width:1309px) {
+
+    .specialists__title {
+        margin-bottom: 15px;
+        position: relative;
+        z-index: 2;
+        color: white;
     }
 }

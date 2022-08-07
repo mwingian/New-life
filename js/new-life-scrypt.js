@@ -35,7 +35,6 @@ if (menuLinks.length > 0) {
             }
 
 
-
             window.scrollTo({
                 top: gotoBlockValue,
                 behavior: "smooth"
