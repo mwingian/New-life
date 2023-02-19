@@ -9,6 +9,26 @@
 }
 
 @font-face {
+    font-family: 'Raleway-Semibold';
+    src: url('../fonts/Raleway-Semibold/Raleway-SemiBold.eot');
+    src: url('../fonts/Raleway-Semibold/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-Semibold/Raleway-SemiBold.woff') format('woff'),
+        url('../fonts/Raleway-Semibold/Raleway-SemiBoldttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url('../fonts/Philosopher-Bold/Philosopher-Bold.eot');
+    src: url('../fonts/Philosopher-Bold/Philosopher-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Philosopher-Bold/Philosopher-Bold.woff') format('woff'),
+        url('../fonts/Philosopher-Bold/Philosopher-Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Roboto-Regular';
     src: url('../fonts/Roboto-Regular/Roboto-Regular.eot');
     src: url('../fonts/Roboto-Regular/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
